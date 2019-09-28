@@ -17,8 +17,12 @@ public class HexaColor
         this.binary = x;
         this.split= new String[3];
         split();
+        hexa();
     }
-
+    public static void main (String args[])
+    {
+        HexaColor hc = new HexaColor("101011011001110001010101");
+    }
     public void split(){
         String x;
         int k=0;
@@ -29,8 +33,22 @@ public class HexaColor
                 k++;
             }
             split[i]= x;
-            System.out.println (split[i].toString());
+            System.out.println (split[i].toString() + "\n");
         }
-        
+    }
+    
+    public void hexa(){
+        int parse;
+        String x = "";
+        String y;
+        for (int i =0; i<split.length; i++){
+            y = "";
+            parse= Integer.parseInt(split[i], 2);
+            System.out.println(parse);
+            x += Integer.toHexString(parse);
+            y =Integer.toHexString(parse);
+            System.out.println(y + "\n");
+        }
+        System.out.println(x+ "\n");
     }
 }
