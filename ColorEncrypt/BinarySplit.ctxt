@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=BinarySplit
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ ImageStuff\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=stringIn
+comment1.target=BinarySplit(java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ ImageStuff\r\n
+comment2.params=
+comment2.target=void\ iHNC()
+comment2.text=\r\n\ Rename\ it\ to\ variable\ arraylist\ of\ binary.\ Something.\r\n\ \r\n
+numComments=3
