@@ -37,18 +37,19 @@ public class HexaColor
         }
     }
     
-    public void hexa(){
+    public String hexa(){
         int parse;
-        String x = "";
+        String color = "";
         String y;
         for (int i =0; i<split.length; i++){
             y = "";
             parse= Integer.parseInt(split[i], 2);
             System.out.println(parse);
-            x += Integer.toHexString(parse);
+            color += Integer.toHexString(parse);
             y =Integer.toHexString(parse);
             System.out.println(y + "\n");
         }
-        System.out.println(x+ "\n");
+        System.out.println(color+ "\n");
+        return color;
     }
 }
