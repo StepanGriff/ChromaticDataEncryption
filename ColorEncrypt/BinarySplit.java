@@ -30,7 +30,8 @@ public class BinarySplit
      * Rename it to variable arraylist of binary. Something.
      * 
      */
-    public void iHNC() {
+    public void twenty4Chunk() {
+        ArrayList<String> listForStringIn = new ArrayList<String>();
         String chunk = "";
         int k;
         for(int i = 0; i < this.stringIn.length(); i += 24) {
@@ -42,7 +43,8 @@ public class BinarySplit
                 }
                 chunk = chunk + this.stringIn.charAt((k));
             } 
-            System.out.println(chunk);
+            listForStringIn.add(chunk);
         }
+
     }
 }
