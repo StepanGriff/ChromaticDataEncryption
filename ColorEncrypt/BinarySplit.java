@@ -9,29 +9,24 @@ import java.util.ArrayList;
  */
 public class BinarySplit
 {
-
-    // instance variables - replace the example below with your own
-    public String[][] firstBinaryBlock;
-
     public String stringIn;
-
-    //public String[] secondBinaryBlock;
-    //public String[] thirdBinaryBlock;
+    ArrayList<String> listForStringIn;
     /**
      * Constructor for objects of class ImageStuff
      */
     public BinarySplit(String stringIn)
     {
-
         this.stringIn = stringIn;
+        twenty4Chunk();
     }
 
-    /*
-     * Rename it to variable arraylist of binary. Something.
-     * 
-     */
+    public ArrayList<String> getList()
+    {
+        return this.listForStringIn;
+    }
+    
     public void twenty4Chunk() {
-        ArrayList<String> listForStringIn = new ArrayList<String>();
+        this.listForStringIn = new ArrayList<String>();
         String chunk = "";
         int k;
         for(int i = 0; i < this.stringIn.length(); i += 24) {
@@ -43,7 +38,7 @@ public class BinarySplit
                 }
                 chunk = chunk + this.stringIn.charAt((k));
             } 
-            listForStringIn.add(chunk);
+            this.listForStringIn.add(chunk);
         }
 
     }

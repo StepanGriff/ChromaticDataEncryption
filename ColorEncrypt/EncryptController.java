@@ -1,7 +1,8 @@
+import java.util.ArrayList;
 
 public class EncryptController
 {
-    HexaColor hexcol;
+    HexaColor[] hexcol;
     BinarySplit binsplit;
     BinaryParser binparse;
     String filename;
@@ -20,19 +21,27 @@ public class EncryptController
         catch (Exception e)
         {
             System.out.println(e);
+            System.exit(1);
         }
-        
+        binsplit = new BinarySplit(binparse.toString());
+        ArrayList<String> split = binsplit.getList();
+        hexcol = new HexaColor[split.size()];
+        for (int i=0; i<hexcol.length; i++)
+        {
+            
+            hexcol[i] = new HexaColor(split.get(i));
+        }
     }
     
     public static void main(String[] args)
     {
-        String binary;
+        // String binary;
         String sampleBinary = "national-anthem-binary.txt";
-        if (args[0] != null) {
-            binary = args[0];
-        } else {
-            binary = sampleBinary;
-        }
-        EncryptController me = new EncryptController(binary);
+        // if (args[0] != null) {
+            // binary = args[0];
+        // } else {
+            // binary = sampleBinary;
+        // }
+        EncryptController me = new EncryptController(sampleBinary);
     }
 }
