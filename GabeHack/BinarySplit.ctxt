@@ -5,6 +5,6 @@ comment1.params=stringIn
 comment1.target=BinarySplit(java.lang.String)
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ ImageStuff\n
 comment2.params=
-comment2.target=void\ iHNC()
+comment2.target=void\ twenty4Chunk()
 comment2.text=\n\ Rename\ it\ to\ variable\ arraylist\ of\ binary.\ Something.\n\ \n
 numComments=3
