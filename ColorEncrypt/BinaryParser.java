@@ -5,7 +5,7 @@ public class BinaryParser
 {
     String filename;
     String binary;
-    
+
     public BinaryParser(String filename)
     throws FileNotFoundException, IOException
     {
@@ -26,7 +26,7 @@ public class BinaryParser
             }
 
         }
-        
+
     }
 
     public String toString()
@@ -35,4 +35,3 @@ public class BinaryParser
     }
 }
 
- 

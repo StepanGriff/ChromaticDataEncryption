@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=FileWriter
+comment1.params=binary\ filename
+comment1.target=FileWriter(java.lang.String,\ java.lang.String)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ FileWriter\n
+comment2.params=
+comment2.target=void\ write()
+numComments=3

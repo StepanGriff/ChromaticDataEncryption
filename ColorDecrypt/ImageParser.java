@@ -43,7 +43,7 @@ public class ImageParser
             System.exit(1);
         }
     }
-    
+
     /**
      * 
      */
@@ -62,8 +62,8 @@ public class ImageParser
                 colorValue = image.getRGB(x,y);
                 readable = new Color(colorValue);
                 parsedValues = new int[] {readable.getRed(),
-                                          readable.getGreen(),
-                                          readable.getBlue()};
+                    readable.getGreen(),
+                    readable.getBlue()};
                 this.colorParse.add(parsedValues);
                 if (compareToEscape(parsedValues))
                 {
@@ -79,12 +79,12 @@ public class ImageParser
             y+=this.HEIGHT;
         }
     }
-    
+
     public ArrayList<int []> getList()
     {
         return this.colorParse;
     }
-    
+
     public boolean compareToEscape(int[] check)
     {
         int correct = 3;

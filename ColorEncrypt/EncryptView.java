@@ -11,13 +11,14 @@ public class EncryptView
     int y;
     int z;
     EncryptModel model;
+    String output;
     /**
      * Constructor for objects of class EncryptView
      */
-    public EncryptView(EncryptModel model)
+    public EncryptView(EncryptModel model, String output)
     {
         this.model = model;
-        //Canvas c = new Canvas (500,500);
+        this.output = output;
         save();
     }
 
@@ -40,7 +41,7 @@ public class EncryptView
                 red= model.hexcol[i].color[0];
                 green = model.hexcol[i].color[1];
                 blue = model.hexcol[i].color[2];
-                
+
                 ig2.setColor(new Color(red, green, blue));
                 ig2.drawLine(x,y,x,z);
                 x++;
@@ -52,7 +53,7 @@ public class EncryptView
                 }
             }
 
-            ImageIO.write(bi, "PNG", new File("balls.PNG"));
+            ImageIO.write(bi, "PNG", new File(this.output));
 
         }catch (IOException ie) {
             ie.printStackTrace();

@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.target=DecryptController
 comment0.text=\n\ \n
-comment1.params=filename
-comment1.target=DecryptController(java.lang.String)
+comment1.params=filename\ output
+comment1.target=DecryptController(java.lang.String,\ java.lang.String)
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ DecryptController\n
 comment2.params=args
 comment2.target=void\ main(java.lang.String[])

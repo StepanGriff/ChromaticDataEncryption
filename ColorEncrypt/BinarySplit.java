@@ -24,7 +24,7 @@ public class BinarySplit
     {
         return this.listForStringIn;
     }
-    
+
     public void twenty4Chunk() {
         this.listForStringIn = new ArrayList<String>();
         String chunk = "";

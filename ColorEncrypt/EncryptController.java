@@ -6,21 +6,26 @@ public class EncryptController
     EncryptModel model;
     EncryptView view;
     JFrame frame;
-    public EncryptController(String filename)
+    public EncryptController(String filename, String output)
     {
         model = new EncryptModel(filename);
-        view = new EncryptView(model);  
+        view = new EncryptView(model, output);  
     }
-    
+
     public static void main(String[] args)
     {
-        // String binary;
-        String sampleBinary = "national-anthem-binary.txt";
-        // if (args[0] != null) {
-            // binary = args[0];
-        // } else {
-            // binary = sampleBinary;
-        // }
-        EncryptController me = new EncryptController(sampleBinary);
+        String filename = "";
+        String output = "";
+        try
+        {
+            filename = args[0];
+            output = args[1];
+        }
+        catch (Exception e)
+        {
+            System.out.println(e);
+            System.exit(1);
+        }
+        EncryptController me = new EncryptController(filename, output);
     }
 }

@@ -22,10 +22,10 @@ public class DecimalToBinary
         this.currentValue="";
         toBinary();
     }
-    
+
     public void toBinary(){
         int[] currentElement;
-             for (int i =0; i<parseColors.size()-ESCAPESEQUENCE; i++){
+        for (int i =0; i<parseColors.size()-ESCAPESEQUENCE; i++){
             currentElement = parseColors.get(i);
             for (int j = 0; j<currentElement.length;j++){
                 currentValue = Integer.toBinaryString (currentElement[j]);
@@ -36,7 +36,7 @@ public class DecimalToBinary
                 original += reverse +" ";
             }
         }
-    
+
     }
 
     public String reverseString(String binary){
@@ -47,7 +47,7 @@ public class DecimalToBinary
         }
         return reversed;
     }
-    
+
     public String adjustSize(String adjusted){
         String currentValue = adjusted;
         for (int i = MAX_LENGTH; i>adjusted.length();i--){
@@ -55,7 +55,7 @@ public class DecimalToBinary
         }
         return currentValue;
     }
-    
+
     public String getOriginal(){
         return this.original;
     }

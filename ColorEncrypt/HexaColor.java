@@ -36,25 +36,20 @@ public class HexaColor
                 k++;
             }
             this.split[i]= stringSection;
-            //System.out.println (split[i].toString() + "\n");
         }
     }
-    
+
     public void hexa(){
         int parse;
         String y;
         for (int i =0; i<split.length; i++){
             //y = "";
             parse= Integer.parseInt(split[i], 2);
-            System.out.println(parse);
             this.color[i] = parse;
-            //color += Integer.toHexString(parse);
-            //y =Integer.toHexString(parse);
-            //System.out.println(y + "\n");
         }
-        //System.out.println(color+ "\n");
     }
-   public int[] getColor(){
-    return color;
+
+    public int[] getColor(){
+        return color;
     }
 }
