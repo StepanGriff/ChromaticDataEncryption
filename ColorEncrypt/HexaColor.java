@@ -13,9 +13,9 @@ public class HexaColor
     /**
      * Constructor for objects of class HexaColor
      */
-    public HexaColor(String x)
+    public HexaColor(String binary)
     {
-        this.binary = x;
+        this.binary = binary;
         this.split= new String[3];
         this.color = new int[3];
         split();
@@ -23,15 +23,19 @@ public class HexaColor
     }
 
     public void split(){
-        String x;
+        String stringSection = "";
         int k=0;
+        while (binary.length() < 24)
+        {
+            binary += "0";
+        }
         for (int i = 0; i<split.length; i++){
-            x = "";
+            stringSection = "";
             for (int j=0; j<binary.length()/3; j++){
-                x = binary.charAt(k)+x;
+                stringSection = binary.charAt(k)+stringSection;
                 k++;
             }
-            this.split[i]= x;
+            this.split[i]= stringSection;
             //System.out.println (split[i].toString() + "\n");
         }
     }
