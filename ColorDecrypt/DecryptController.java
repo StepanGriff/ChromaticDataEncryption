@@ -1,33 +1,26 @@
 
 /**
- * Write a description of class DecryptController here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * 
  */
 public class DecryptController
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
+    String filename;
+    ImageParser impar;
+    DecimalToBinary dtb;
     /**
      * Constructor for objects of class DecryptController
      */
-    public DecryptController()
+    public DecryptController(String filename)
     {
-        // initialise instance variables
-        x = 0;
+        this.filename=filename;
+        impar = new ImageParser(this.filename);
+        dtb = new DecimalToBinary(impar.getList());
+        System.out.print(dtb.getOriginal());
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+    
+    public static void main(String[] args)
     {
-        // put your code here
-        return x + y;
+        String filename = "balls.PNG";
+        DecryptController me = new DecryptController(filename);
     }
 }

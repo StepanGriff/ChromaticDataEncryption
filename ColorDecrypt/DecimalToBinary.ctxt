@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=DecimalToBinary
+comment0.text=\n\ Write\ a\ description\ of\ class\ DecimaltoBinary\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=void\ toBinary()
+comment2.params=binary
+comment2.target=java.lang.String\ reverseString(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getOriginal()
+numComments=4

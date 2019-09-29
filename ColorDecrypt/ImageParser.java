@@ -23,6 +23,8 @@ public class ImageParser
     {
         this.filename = filename;
         this.colorParse = new ArrayList<int []>();
+        imageIn();
+        parseImage();
     }
 
     /**
@@ -53,7 +55,7 @@ public class ImageParser
         int breakCount = 0;
         Color readable;
         int[] parsedValues;
-        while (breakCount != this.BREAKLIMIT)
+        while (breakCount < this.BREAKLIMIT)
         {
             for (x=0; x<WIDTH; x++)
             {
@@ -63,10 +65,10 @@ public class ImageParser
                                           readable.getGreen(),
                                           readable.getBlue()};
                 this.colorParse.add(parsedValues);
-                if (parsedValues.equals(this.ESCAPECOLOR))
+                if (compareToEscape(parsedValues))
                 {
                     breakCount++;
-                    if (breakCount==this.BREAKLIMIT)
+                    if (breakCount>=this.BREAKLIMIT)
                     {
                         break;
                     }
@@ -76,5 +78,24 @@ public class ImageParser
             }
             y+=this.HEIGHT;
         }
+    }
+    
+    public ArrayList<int []> getList()
+    {
+        return this.colorParse;
+    }
+    
+    public boolean compareToEscape(int[] check)
+    {
+        int correct = 3;
+        int counts = 0;
+        for (int i=0; i<check.length;i++)
+        {
+            if (check[i] == ESCAPECOLOR[i])
+            {
+                counts++;
+            }
+        }
+        return (counts==correct);
     }
 }

@@ -15,7 +15,7 @@ public class EncryptController
     public static void main(String[] args)
     {
         // String binary;
-        String sampleBinary = "national-anthem-binary.txt";
+        String sampleBinary = "thetest.txt";
         // if (args[0] != null) {
             // binary = args[0];
         // } else {
