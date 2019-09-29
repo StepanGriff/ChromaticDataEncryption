@@ -7,6 +7,7 @@ public class DecryptController
     String filename;
     ImageParser impar;
     DecimalToBinary dtb;
+    FileWriter fw;
     /**
      * Constructor for objects of class DecryptController
      */
@@ -15,7 +16,8 @@ public class DecryptController
         this.filename=filename;
         impar = new ImageParser(this.filename);
         dtb = new DecimalToBinary(impar.getList());
-        System.out.print(dtb.getOriginal());
+        fw = new FileWriter(dtb.getOriginal(), "pleasework.txt");
+        fw.write();
     }
     
     public static void main(String[] args)
