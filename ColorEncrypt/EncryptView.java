@@ -27,13 +27,8 @@ public class EncryptView
         int y=0;
         int red,green,blue;
         try {
-
             int width = 500, height = 500;
-
-            // TYPE_INT_ARGB specifies the image format: 8-bit RGBA packed
-            // into integer pixels
             BufferedImage bi = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
-
             Graphics2D ig2 = bi.createGraphics();
             y=0;
             z=5;
@@ -41,7 +36,6 @@ public class EncryptView
                 red= model.hexcol[i].color[0];
                 green = model.hexcol[i].color[1];
                 blue = model.hexcol[i].color[2];
-
                 ig2.setColor(new Color(red, green, blue));
                 ig2.drawLine(x,y,x,z);
                 x++;
@@ -52,9 +46,7 @@ public class EncryptView
                     x=0;
                 }
             }
-
             ImageIO.write(bi, "PNG", new File(this.output));
-
         }catch (IOException ie) {
             ie.printStackTrace();
         }

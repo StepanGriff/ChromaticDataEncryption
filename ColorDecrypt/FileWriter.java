@@ -18,7 +18,7 @@ public class FileWriter
         try
         {
             PrintWriter writer = new PrintWriter(this.filename);
-            writer.println(this.binary + newline);
+            writer.println(this.binary);
             writer.close();
         }
         catch (Exception e)

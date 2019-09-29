@@ -11,7 +11,8 @@ public class DecimalToBinary
     String original;
     String currentValue;
     final static int ESCAPESEQUENCE = 3;
-    final int MAX_LENGTH=8;
+    final static int MAX_LENGTH=8;
+    final static String NULL = "00000000";
     /**
      * Constructor for objects of class DecimaltoBinary
      */
@@ -33,7 +34,10 @@ public class DecimalToBinary
                 if (reverse.length() < 8){
                     reverse = adjustSize(reverse);
                 }
+                if (!reverse.equals(this.NULL))
+                {
                 original += reverse +" ";
+            }
             }
         }
 
