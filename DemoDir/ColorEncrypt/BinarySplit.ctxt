@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=BinarySplit
+comment0.text=\n\ Splits\ chunks\ of\ binary.\n\n\ @Justin,\ Steve,\ Gabriel\n\ @9/29/19\n
+comment1.params=stringIn
+comment1.target=BinarySplit(java.lang.String)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ ImageStuff.\ This\ constructor\ specifically\ talks\ about\ the\ stringIn\ in\ the\ \n\ method\ twenty4chunk.\ It\ then\ invokes\ the\ method.\ \n
+comment2.params=
+comment2.target=java.util.ArrayList\ getList()
+comment2.text=\n\ This\ method\ will\ return\ an\ ArrayList\ of\ a\ String\ from\ what\ was\ initialized\ in\ the\ constructor\ BinarySplit.\ \n
+comment3.params=
+comment3.target=void\ twenty4Chunk()
+comment3.text=\n\ This\ method\ does\ not\ return\ a\ value,\ however,\ creates\ an\ ArrayList\ that\ would\ be\ used\ by\ different\ classes\ to\ get\ \n\ 24\ bits\ of\ binary\ at\ a\ time.\ The\ "chunk",\ the\ empty\ String,\ would\ be\ given\ the\ String\ of\ whatever\ is\ getting\ passed.\n
+numComments=4
