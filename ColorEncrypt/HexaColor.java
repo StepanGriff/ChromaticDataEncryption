@@ -33,7 +33,7 @@ public class HexaColor
                 k++;
             }
             split[i]= x;
-            System.out.println (split[i].toString() + "\n");
+            //System.out.println (split[i].toString() + "\n");
         }
     }
     
@@ -44,12 +44,12 @@ public class HexaColor
         for (int i =0; i<split.length; i++){
             y = "";
             parse= Integer.parseInt(split[i], 2);
-            System.out.println(parse);
+            //System.out.println(parse);
             color += Integer.toHexString(parse);
             y =Integer.toHexString(parse);
-            System.out.println(y + "\n");
+            //System.out.println(y + "\n");
         }
-        System.out.println(color+ "\n");
+        //System.out.println(color+ "\n");
         return color;
     }
 }

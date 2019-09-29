@@ -1,13 +1,15 @@
 import java.util.ArrayList;
-
+import java.awt.*;
+import javax.swing.JFrame;
 public class EncryptController
 {
     EncryptModel model;
     EncryptView view;
+    JFrame frame;
     public EncryptController(String filename)
     {
         model = new EncryptModel(filename);
-        view = new EncryptView(model);
+        view = new EncryptView(model);  
     }
     
     public static void main(String[] args)

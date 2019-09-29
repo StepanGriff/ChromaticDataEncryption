@@ -33,12 +33,6 @@ public class BinaryParser
     {
         return this.binary;
     }
-    
-    public static void main(String args[]){
-        BinaryParser biparse= new BinaryParser(
-        "national-anthem-binary.txt");
-        BinarySplit bi = new BinarySplit(biparse.toString());
-    }
 }
 
  

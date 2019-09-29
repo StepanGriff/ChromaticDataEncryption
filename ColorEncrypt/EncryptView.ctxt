@@ -1,7 +1,9 @@
 #BlueJ class context
 comment0.target=EncryptView
-comment0.text=\n\ \n
+comment0.text=\r\n\ \r\n
 comment1.params=model
 comment1.target=EncryptView(EncryptModel)
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ EncryptView\n
-numComments=2
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ EncryptView\r\n
+comment2.params=
+comment2.target=void\ save()
+numComments=3

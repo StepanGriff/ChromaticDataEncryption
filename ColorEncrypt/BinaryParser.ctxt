@@ -4,6 +4,4 @@ comment1.params=filename
 comment1.target=BinaryParser(java.lang.String)
 comment2.params=
 comment2.target=java.lang.String\ toString()
-comment3.params=args
-comment3.target=void\ main(java.lang.String[])
-numComments=4
+numComments=3
