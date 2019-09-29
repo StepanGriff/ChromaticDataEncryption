@@ -24,6 +24,7 @@ public class EncryptView
     public void save(){
         int x=0;
         int y=0;
+        int red,green,blue;
         try {
 
             int width = 500, height = 500;
@@ -36,15 +37,19 @@ public class EncryptView
             y=0;
             z=5;
             for (int i =0; i<model.hexcol.length; i++){ 
-                ig2.setColor(Color.decode("#"+ model.hexcol[i].hexa()));
+                red= model.hexcol[i].color[0];
+                green = model.hexcol[i].color[1];
+                blue = model.hexcol[i].color[2];
+                
+                ig2.setColor(new Color(red, green, blue));
                 ig2.drawLine(x,y,x,z);
                 x++;
                 //y++;
-                 if (x>=500){
-                     y+=10;
-                     z+= 10;
-                     x=0;
-                 }
+                if (x>=500){
+                    y+=10;
+                    z+= 10;
+                    x=0;
+                }
             }
 
             ImageIO.write(bi, "PNG", new File("balls.PNG"));
