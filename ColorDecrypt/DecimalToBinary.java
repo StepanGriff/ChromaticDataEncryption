@@ -29,10 +29,11 @@ public class DecimalToBinary
             currentElement = parseColors.get(i);
             for (int j = 0; j<currentElement.length;j++){
                 currentValue = Integer.toBinaryString (currentElement[j]);
-                if (currentValue.length() < 8){
-                    currentValue = adjustSize(currentValue);
+                String reverse = reverseString(currentValue);
+                if (reverse.length() < 8){
+                    reverse = adjustSize(reverse);
                 }
-                original += reverseString(currentValue) +" ";
+                original += reverse +" ";
             }
         }
     
@@ -50,7 +51,7 @@ public class DecimalToBinary
     public String adjustSize(String adjusted){
         String currentValue = adjusted;
         for (int i = MAX_LENGTH; i>adjusted.length();i--){
-            currentValue += "0" ;
+            currentValue += "0";
         }
         return currentValue;
     }
