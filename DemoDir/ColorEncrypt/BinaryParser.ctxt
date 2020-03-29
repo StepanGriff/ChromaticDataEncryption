@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=BinaryParser
-comment1.params=filename
-comment1.target=BinaryParser(java.lang.String)
-comment1.text=\nIn\ this\ method,\ there\ may\ be\ cases\ where\ problems\ arise.\ It\ will\ throw\ the\ two\ that\ follows\ "throws"\ and\nproduces\ those\ errors.\ It\ will\ then\ take\ in\ and\ read\ a\ text\ file\ that\ will\ then\ be\ expected\ to\ be\ in\ binary\ \nformat\ without\ spaces.\ \n
-comment2.params=
-comment2.target=java.lang.String\ toString()
-comment2.text=\n\ This\ method\ takes\ a\ String\ and\ returns\ the\ specific\ binary\ seen\ before.\n
-numComments=3

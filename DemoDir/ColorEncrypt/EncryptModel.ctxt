@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=EncryptModel
-comment1.params=filename
-comment1.target=EncryptModel(java.lang.String)
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ EncryptModel.\ \n
-comment2.params=
-comment2.target=void\ addEscape()
-comment2.text=\n\ This\ method\ returns\ nothing.\ After\ what\ was\ done\ with\ the\ constructor,\ it\ will\ then\ add\ escape\ characters\ to\ the\ \n\ end\ of\ the\ hexcol\ array.\n
-numComments=3
